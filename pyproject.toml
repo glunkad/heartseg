@@ -24,7 +24,7 @@ dependencies = [
 [project.urls]
 homepage = "https://github.com/glunkad/heartseg"
 repository = "https://github.com/glunkad/heartseg"
-Dataset005_heartseg = "https://github.com/glunkad/heartseg/releases/download/v1.0.0/r20251014.zip"
+Dataset005_heartseg = "https://github.com/glunkad/heartseg/releases/download/r20251014/Dataset005_ACDC.zip"
 
 
 [project.scripts]

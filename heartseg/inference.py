@@ -199,7 +199,7 @@ def inference(
             print(f"Preprocessing complete. NIfTI files saved in: {preprocessed_dir}")
 
     # Datasets data
-    my_dataset = 'Dataset101_HeartSeg'
+    my_dataset = 'r20251014/Dataset005_ACDC'
     fold = 0
 
     # Set nnUNet results path
