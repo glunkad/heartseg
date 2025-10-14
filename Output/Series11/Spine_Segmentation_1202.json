@@ -1,0 +1,21 @@
+{
+	"ManufacturersModelName": "Spine Segmentation Tool",
+	"DeviceSerialNumber": "12345",
+	"SoftwareVersions": "1.0",
+	"StudyDescription": "MRI LUMBAR SPINE  WITH W S SPLAIN",
+	"SeriesDescription": "Spine Segmentation",
+	"ProtocolName": "Spine Segmentation",
+	"ImageType": ["DERIVED", "SECONDARY", "SEGMENTATION"],
+	"RawImage": false,
+	"SeriesNumber": 1202,
+	"SliceThickness": 4,
+	"ImageOrientationPatientDICOM": [
+		0,
+		1,
+		0,
+		0,
+		0,
+		-1	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20250505"
+}

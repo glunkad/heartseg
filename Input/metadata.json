@@ -1,0 +1,263 @@
+{
+  "@schema": "https://raw.githubusercontent.com/qiicr/dcmqi/master/doc/schemas/seg-schema.json#",
+  "ContentCreatorName": "TotalSpineSeg",
+  "ClinicalTrialSeriesID": "SpineSegmentation",
+  "ClinicalTrialTimePointID": "1",
+  "SeriesDescription": "Total Spine Segmentation (Vertebrae, Discs, Cord)",
+  "SeriesNumber": "501",
+  "InstanceNumber": "1",
+  "BodyPartExamined": "SPINE",
+  "segmentAttributes": [[
+    {
+      "labelID": 1, "SegmentDescription": "Spinal Cord", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "816094009", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Central nervous system"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "2748008", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Spinal cord"}
+    },
+    {
+      "labelID": 2, "SegmentDescription": "Spinal Canal", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "26004006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Spinal canal"}
+    },
+    {
+      "labelID": 11, "SegmentDescription": "Cervical Vertebra 1", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "31438002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Cervical vertebra"}
+    },
+    {
+      "labelID": 12, "SegmentDescription": "Cervical Vertebra 2", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "31438002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Cervical vertebra"}
+    },
+    {
+      "labelID": 13, "SegmentDescription": "Cervical Vertebra 3", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "31438002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Cervical vertebra"}
+    },
+    {
+      "labelID": 14, "SegmentDescription": "Cervical Vertebra 4", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "31438002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Cervical vertebra"}
+    },
+    {
+      "labelID": 15, "SegmentDescription": "Cervical Vertebra 5", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "31438002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Cervical vertebra"}
+    },
+    {
+      "labelID": 16, "SegmentDescription": "Cervical Vertebra 6", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "31438002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Cervical vertebra"}
+    },
+    {
+      "labelID": 17, "SegmentDescription": "Cervical Vertebra 7", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "31438002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Cervical vertebra"}
+    },
+    {
+      "labelID": 21, "SegmentDescription": "Thoracic Vertebra 1", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 22, "SegmentDescription": "Thoracic Vertebra 2", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 23, "SegmentDescription": "Thoracic Vertebra 3", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 24, "SegmentDescription": "Thoracic Vertebra 4", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 25, "SegmentDescription": "Thoracic Vertebra 5", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 26, "SegmentDescription": "Thoracic Vertebra 6", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 27, "SegmentDescription": "Thoracic Vertebra 7", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 28, "SegmentDescription": "Thoracic Vertebra 8", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 29, "SegmentDescription": "Thoracic Vertebra 9", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 30, "SegmentDescription": "Thoracic Vertebra 10", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 31, "SegmentDescription": "Thoracic Vertebra 11", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 32, "SegmentDescription": "Thoracic Vertebra 12", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "51555005", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Thoracic vertebra"}
+    },
+    {
+      "labelID": 41, "SegmentDescription": "Lumbar Vertebra 1", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "36932002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Lumbar vertebra"}
+    },
+    {
+      "labelID": 42, "SegmentDescription": "Lumbar Vertebra 2", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "36932002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Lumbar vertebra"}
+    },
+    {
+      "labelID": 43, "SegmentDescription": "Lumbar Vertebra 3", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "36932002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Lumbar vertebra"}
+    },
+    {
+      "labelID": 44, "SegmentDescription": "Lumbar Vertebra 4", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "36932002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Lumbar vertebra"}
+    },
+    {
+      "labelID": 45, "SegmentDescription": "Lumbar Vertebra 5", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "36932002", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Lumbar vertebra"}
+    },
+    {
+      "labelID": 61, "SegmentDescription": "Intervertebral Disc C1-C2", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 62, "SegmentDescription": "Intervertebral Disc C2-C3", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 63, "SegmentDescription": "Intervertebral Disc C3-C4", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 64, "SegmentDescription": "Intervertebral Disc C4-C5", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 65, "SegmentDescription": "Intervertebral Disc C5-C6", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 66, "SegmentDescription": "Intervertebral Disc C6-C7", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 67, "SegmentDescription": "Intervertebral Disc C7-T1", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 71, "SegmentDescription": "Intervertebral Disc T1-T2", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 72, "SegmentDescription": "Intervertebral Disc T2-T3", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 73, "SegmentDescription": "Intervertebral Disc T3-T4", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 74, "SegmentDescription": "Intervertebral Disc T4-T5", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 75, "SegmentDescription": "Intervertebral Disc T5-T6", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 76, "SegmentDescription": "Intervertebral Disc T6-T7", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 77, "SegmentDescription": "Intervertebral Disc T7-T8", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 78, "SegmentDescription": "Intervertebral Disc T8-T9", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 79, "SegmentDescription": "Intervertebral Disc T9-T10", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 80, "SegmentDescription": "Intervertebral Disc T10-T11", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 81, "SegmentDescription": "Intervertebral Disc T11-T12", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 82, "SegmentDescription": "Intervertebral Disc T12-L1", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 91, "SegmentDescription": "Intervertebral Disc L1-L2", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 92, "SegmentDescription": "Intervertebral Disc L2-L3", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 93, "SegmentDescription": "Intervertebral Disc L3-L4", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 94, "SegmentDescription": "Intervertebral Disc L4-L5", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    },
+    {
+      "labelID": 95, "SegmentDescription": "Intervertebral Disc L5-S1", "SegmentAlgorithmType": "AUTOMATIC","SegmentAlgorithmName": "TotalSpineSeg",
+      "SegmentedPropertyCategoryCodeSequence": {"CodeValue": "69533006", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Vertebral column"},
+      "SegmentedPropertyTypeCodeSequence": {"CodeValue": "33827001", "CodingSchemeDesignator": "SCT", "CodeMeaning": "Intervertebral disc"}
+    }
+  ]
+  ]
+}

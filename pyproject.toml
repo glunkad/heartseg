@@ -1,0 +1,43 @@
+[project]
+name = "heartseg"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "tqdm",
+    "numpy<2",
+    "nibabel",
+    "gryds",
+    "torchio",
+    "scipy",
+    "pillow",
+    "nilearn",
+    "SimpleITK",
+    # We use nnunetv2==2.4.2 for nnUNetTrainer_DASegOrd0_NoMirroring
+    # https://github.com/MIC-DKFZ/nnUNet/issues/2480
+    # --verify_dataset_integrity not working in nnunetv2==2.4.2 do we need to update this when fixed
+    # https://github.com/MIC-DKFZ/nnUNet/issues/2144
+    "nnunetv2<=2.4.2",
+    "psutil",
+]
+
+[project.urls]
+homepage = "https://github.com/glunkad/heartseg"
+repository = "https://github.com/glunkad/heartseg"
+Dataset101_heartseg_step1 = "https://github.com/glunkad/heartseg/releases/download/r20241115/Dataset101_heartseg_step1_r20241115.zip"
+Dataset102_heartseg_step2 = "https://github.com/glunkad/heartseg/releases/download/r20241115/Dataset102_heartseg_step2_r20241115.zip"
+
+[project.scripts]
+heartseg = "heartseg.inference:main"
+heartseg_init = "heartseg.init_inference:main"
+heartseg_cpdir = "heartseg.utils.cpdir:main"
+
+[build-system]
+requires = ["pip>=23", "setuptools>=67"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+'heartseg' = ['resources/**.json']
