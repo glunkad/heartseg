@@ -184,22 +184,19 @@ def inference(
     if not data_path.exists():
         raise FileNotFoundError(f"The heartseg data folder does not exist at {data_path}.")
 
-    # Preprocess if input is a directory of DICOMs
-    if input_path.is_dir():
-        # Heuristic: if the directory contains no NIfTI files, assume it's DICOM and preprocess it.
-        if not any(input_path.rglob('*.nii*')):
-            if not quiet:
-                print("\nInput directory contains no NIfTI files. Assuming DICOM input and starting preprocessing...")
+    # Handle DICOM preprocessing
+    if input_path.is_dir() and not any(input_path.rglob('*.nii*')):
+        if not quiet:
+            print("\nDetected DICOM input. Starting preprocessing...")
 
-            preprocessed_path = output_path / 'preprocessed_input'
-            preprocessed_path.mkdir(exist_ok=True, parents=True)
+        preprocessed_dir = output_path / 'preprocessed_input'
+        preprocessed_dir.mkdir(parents=True, exist_ok=True)
 
-            # Call the preprocessing function
-            preprocess_data(input_path, preprocessed_path)
+        preprocess_data(str(input_path), str(preprocessed_dir))
+        input_path = preprocessed_dir
 
-            input_path = preprocessed_path  # Update input_path to the new nifti dir
-            if not quiet:
-                print(f"Preprocessing complete. Using NIfTI files from '{preprocessed_path}' for inference.")
+        if not quiet:
+            print(f"Preprocessing complete. NIfTI files saved in: {preprocessed_dir}")
 
     # Datasets data
     my_dataset = 'Dataset101_HeartSeg'
