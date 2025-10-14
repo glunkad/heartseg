@@ -8,7 +8,6 @@ from tqdm import tqdm
 from heartseg import *
 from heartseg.init_inference import init_inference
 
-
 warnings.filterwarnings("ignore")
 
 
@@ -184,20 +183,6 @@ def inference(
     if not data_path.exists():
         raise FileNotFoundError(f"The heartseg data folder does not exist at {data_path}.")
 
-    # Handle DICOM preprocessing
-    if input_path.is_dir() and not any(input_path.rglob('*.nii*')):
-        if not quiet:
-            print("\nDetected DICOM input. Starting preprocessing...")
-
-        preprocessed_dir = output_path / 'preprocessed_input'
-        preprocessed_dir.mkdir(parents=True, exist_ok=True)
-
-        preprocess_data(str(input_path), str(preprocessed_dir))
-        input_path = preprocessed_dir
-
-        if not quiet:
-            print(f"Preprocessing complete. NIfTI files saved in: {preprocessed_dir}")
-
     # Datasets data
     my_dataset = 'r20251014/Dataset005_ACDC'
     fold = 0
@@ -234,6 +219,12 @@ def inference(
             max_workers_nnunet = {max_workers_nnunet}
             device = "{device.type}"
         '''))
+    if not quiet: print('\n' 'Converting DICOM to Nifti:')
+    if input_path.is_dir() and not any(input_path.rglob('*.nii*')):
+        preprocessed_dir = output_path / 'preprocessed_input'
+        preprocessed_dir.mkdir(parents=True, exist_ok=True)
+        convert_dcm2nifti(input_path, preprocessed_dir)
+        input_path = preprocessed_dir
 
     if not quiet: print('\n' 'Making input dir with _0000 suffix:')
     if not input_path.is_dir():
