@@ -1,44 +1,35 @@
 import os
-import glob
-import subprocess
-import shutil
 import argparse
+import SimpleITK as sitk
 
 
 def convert_dcm2nifti(dicom_dir, output_dir):
     """
-    Converts DICOM files in a directory to a single merged NIfTI file using dcm2niix.
+    Converts DICOM files in a directory to a single merged NIfTI file using SimpleITK.
     """
+
     os.makedirs(output_dir, exist_ok=True)
-    temp_dir = os.path.join(output_dir, "temp")
-    os.makedirs(temp_dir, exist_ok=True)
+    nifti_path = os.path.join(output_dir, f"{os.path.basename(dicom_dir)}.nii.gz")
 
-    cmd = ["dcm2niix", "-m", "y", "-z", "y", "-f", "%p", "-o", temp_dir, dicom_dir]
+    reader = sitk.ImageSeriesReader()
+    dicom_names = reader.GetGDCMSeriesFileNames(dicom_dir)
+    reader.SetFileNames(dicom_names)
 
-    try:
-        subprocess.run(cmd, check=True, capture_output=True, text=True)
-        nifti_files = glob.glob(os.path.join(temp_dir, "*.nii.gz"))
-        if not nifti_files:
-            print("No NIfTI file created.")
-            return
+    image = reader.Execute()
+    sitk.WriteImage(image, nifti_path)
 
-        main_nifti = max(nifti_files, key=os.path.getsize)
-        final_path = os.path.join(output_dir, f"{os.path.basename(dicom_dir)}.nii.gz")
-        shutil.move(main_nifti, final_path)
-        print(f"Saved: {final_path}")
+    print(f"Saved: {nifti_path}")
 
-    except subprocess.CalledProcessError as e:
-        print(f"Error: {e.stderr.strip()}")
-
-    shutil.rmtree(temp_dir, ignore_errors=True)
 
 def main():
     parser = argparse.ArgumentParser(description="Convert a DICOM folder to NIfTI (.nii.gz).")
-    parser.add_argument("dicom_dir", help="Path to the DICOM directory.")
-    parser.add_argument("output_dir", help="Path to the output directory.")
+    parser.add_argument("--dicom_dir", help="Path to the DICOM directory.")
+    parser.add_argument("--output_dir", help="Path to the output directory.")
+
     args = parser.parse_args()
 
-    convert_dcm2nifti(args.dicom_dir, args.output_dir)
+    if args.dicom_dir and args.output_dir:
+        convert_single_dicom_series(args.dicom_dir, args.output_dir)
 
 
 if __name__ == "__main__":
