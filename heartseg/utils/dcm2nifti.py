@@ -2,7 +2,6 @@ import os
 import argparse
 import SimpleITK as sitk
 
-
 def convert_dcm2nifti(dicom_dir, output_dir):
     """
     Converts DICOM files in a directory to a single merged NIfTI file using SimpleITK.
@@ -29,7 +28,7 @@ def main():
     args = parser.parse_args()
 
     if args.dicom_dir and args.output_dir:
-        convert_single_dicom_series(args.dicom_dir, args.output_dir)
+        convert_dcm2nifti(args.dicom_dir, args.output_dir)
 
 
 if __name__ == "__main__":

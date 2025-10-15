@@ -34,7 +34,7 @@ def convert_nifti2dcmseg(nifti_path, dicom_dir, json_path, output_dicom_path):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Convert DICOM files to NIfTI format using dcm2niix."
+        description="Convert NIfTI files to DICOM seg format."
     )
     parser.add_argument(
         "--nifti_file",
